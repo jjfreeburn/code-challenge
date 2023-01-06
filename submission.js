@@ -35,12 +35,12 @@ const largestPair = function(array) {
 
 
 const removeParenth = function(str) {
-  var result = "";
+  var newStr = "";
   for (var i = 0; i < str.length; i++) {
-    if (!(str[i] === "(" || str[i] === ")")) result += str[i];
+    if (!(str[i] === "(" || str[i] === ")")) newStr += str[i];
   }
   
-  return result;
+  return newStr;
 }
  
 
