@@ -23,6 +23,19 @@ const isPalindrome = function(str) {
 
 const largestPair = function(array) {
   // your code here - don't forget to return a number!
+  const array = [1, 3, 5, 8];
+
+const largestPair = function (array) {
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    const elementAjacent = array[i + 1];
+    const product = element * elementAjacent;
+    const result = Math.max(...products);
+    console.log(result);
+  }
+};
+
+largestPair(array);
 };
 
 const removeParenth = function(str) {
