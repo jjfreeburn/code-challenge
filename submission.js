@@ -52,7 +52,19 @@ console.log(adjacentElementsProduct(array));
 
 const removeParenth = function(str) {
   // your code here - don't forget to return a string!
+  const removeParenth = function (str) {
+  const result = "";
+  for (let i = 0; i < str.length; i++) {
+    
+    if (str[i] === "(" || str[i] === ")") {
+      result += str[i];
+    }
+    console.log(result);
+    return result;
+  }
 };
+};
+
 
 const scoreScrabble = function(str) {
   // your code here - don't forget to return a number!
