@@ -34,14 +34,14 @@ const largestPair = function(array) {
 
 
 
-const removeParenth = function(str) {
-  var newStr = "";
+const removeparenth = function (str) {
+  let newStr = "";
   for (var i = 0; i < str.length; i++) {
     if (!(str[i] === "(" || str[i] === ")")) newStr += str[i];
   }
-  
+
   return newStr;
-}
+};
  
 
 
