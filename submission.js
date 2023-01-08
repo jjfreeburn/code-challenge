@@ -8,8 +8,30 @@ const findSum = function(array) {
 
 
 const findFrequency = function(array) {
-  // your code here - don't forget to return an object!
+  let maxMinFrequency = {
+    most: "",
+    least: "",
+  };
+  let maxCount = 0;
+  let minCount = array.length;
+  for (let i = 0; i < array.length; i++) {
+    let count = 0;
+    for (let j = 0; j < array.length; j++) {
+      if (array[i] === array[j]) count++;
+    }
+    if (count > maxCount) {
+      maxCount = count;
+      maxMinFrequency.most = array[i];
+    }
+    if (count < minCount) {
+      minCount = count;
+      maxMinFrequency.least = array[i];
+    }
+  }
+  return maxMinFrequency;
 };
+
+
 
 const isPalindrome = function(str) {
   for (let i = 0; i < str.length; i++) {
