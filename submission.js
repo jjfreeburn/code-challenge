@@ -102,4 +102,3 @@ const scoreScrabble = function(str) {
   }
   return sum;
 };
-};
